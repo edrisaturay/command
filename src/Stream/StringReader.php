@@ -1,8 +1,8 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
 /**
  * Reads a stream into a string
- * @package kamermans\Command\Stream
+ * @package Edrisa\Command\Stream
  */
 class StringReader implements Handler, Reader {
 

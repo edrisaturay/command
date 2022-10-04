@@ -1,8 +1,8 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
 /**
  * Manages an IO handle/resource and is able to provide stats about the bytes affected.
- * @package kamermans\Command\Stream
+ * @package Edrisa\Command\Stream
  */
 interface Handler {
 

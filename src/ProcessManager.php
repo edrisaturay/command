@@ -1,11 +1,11 @@
-<?php namespace kamermans\Command;
-use kamermans\Command\Stream\Handler;
+<?php namespace Edrisa\Command;
+use Edrisa\Command\Stream\Handler;
 
 /**
  * Class ProcessManager
  * Starts and manages a process, handling STDIN, STDOUT and STDERR and exit status.
  *
- * @package kamermans\Command
+ * @package Edrisa\Command
  */
 class ProcessManager {
 

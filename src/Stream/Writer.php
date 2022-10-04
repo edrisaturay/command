@@ -1,8 +1,8 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
 /**
  * Handles a stream and can write to it
- * @package kamermans\Command\Stream
+ * @package Edrisa\Command\Stream
  */
 interface Writer {
 

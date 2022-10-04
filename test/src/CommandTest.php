@@ -1,4 +1,4 @@
-<?php namespace kamermans\Command;
+<?php namespace Edrisa\Command;
 
 class CommandTest extends \PHPUnit_Framework_TestCase {
 
@@ -50,7 +50,7 @@ EOF;
     }
 
     /**
-     * @expectedException kamermans\Command\CommandException
+     * @expectedException Edrisa\Command\CommandException
      */
     public function testCommandNotFound()
     {
@@ -60,7 +60,7 @@ EOF;
     }
 
     /**
-     * @expectedException kamermans\Command\CommandException
+     * @expectedException Edrisa\Command\CommandException
      * @expectedExceptionMessage Command failed './exit_code.sh '4'':
      */
     public function testCommandFailedThrows()

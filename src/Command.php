@@ -1,4 +1,4 @@
-<?php namespace kamermans\Command;
+<?php namespace Edrisa\Command;
 
 class Command
 {

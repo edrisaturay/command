@@ -1,7 +1,7 @@
-kamermans/command
+Edrisa/command
 =======
 
-[![Build Status](https://travis-ci.org/kamermans/command.svg?branch=master)](https://travis-ci.org/kamermans/command)
+[![Build Status](https://travis-ci.org/Edrisa/command.svg?branch=master)](https://travis-ci.org/Edrisa/command)
 
 External command runner / executor for PHP.  This is an object oriented, robust replacement for `exec`, `shell_exec`, the backtick operator and the like.
 
@@ -22,7 +22,7 @@ $cmd = Command::factory('ls')->run();
 Here we are safely adding arguments:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $cmd = Command::factory('/usr/bin/svn')
     ->option('--username', 'drslump')
@@ -38,7 +38,7 @@ echo $cmd->getStdOut();
 Normally all command output is buffered and once the command completes you can access it.  By using a callback, the output is buffered until the desired number of bytes is received (see `Command::setReadBuffer(int $bytes)`), then it is passed to your callback function:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $cmd = Command::factory('ls')
     ->setCallback(function($pipe, $data) {
@@ -54,7 +54,7 @@ $cmd = Command::factory('ls')
 Alternately, you can set the second argument for `Command::run(string $stdin, bool $lines)` to `true` to execute your callback once for every line of output:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $cmd = Command::factory('ls')
     ->setCallback(function($pipe, $data){
@@ -70,7 +70,7 @@ $cmd = Command::factory('ls')
 The STDOUT and STDERR is collected inside PHP by default.  If you have a large amount of data to pass into the command, you should stream it in (see STDIN from a stream below).  If you have a large amount of output from the command, you should stream it out using a callback:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
@@ -99,7 +99,7 @@ fclose($stdin);
 By default, the command passed to `Command::factory(string $command, bool $escape)` is escaped, so characters like `|` and `>` will replaced with `\|` and `\>` respectively.  To prevent the command factory from escaping your command, you can pass `true` as the second argument:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $cmd = Command::factory('grep CRON < /var/log/syslog | head', true)->run();
 
@@ -110,7 +110,7 @@ echo $cmd->getStdOut();
 To output content to your `STDERR` there is a helper function `Command::echoStdErr(string $content)`:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $cmd = Command::factory('grep CRON < /var/log/syslog | head', true)
     ->setCallback(function($pipe,$data) {
@@ -129,7 +129,7 @@ You can provide data for STDIN using a string or a stream resource (like a file 
 ### STDIN from a String
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $stdin = "banana
 orange
@@ -146,7 +146,7 @@ echo $cmd->getStdOut();
 ### STDIN from a Stream
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 $filename = __DIR__.'/../README.md';
 $stdin = fopen($filename, 'r');
@@ -165,7 +165,7 @@ echo "File $filename contains $words words\n";
 Your system's `STDIN` is also a stream, so you can accept input that is typed on the command line or piped into your script as well:
 
 ```php
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 echo "Type some words, one per line, then press CTRL-D and they will be sorted:\n";
 

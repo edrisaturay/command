@@ -1,11 +1,11 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
-use kamermans\Command\Exception;
-use kamermans\Command\TerminateException;
+use Edrisa\Command\Exception;
+use Edrisa\Command\TerminateException;
 
 /**
  * Reads a stream into a callback in chunks
- * @package kamermans\Command\Stream
+ * @package Edrisa\Command\Stream
  */
 class CallbackReader extends StringReader {
 

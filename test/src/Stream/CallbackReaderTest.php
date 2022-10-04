@@ -1,7 +1,7 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
 use stdClass as Storage;
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 class CallbackReaderTest extends \PHPUnit_Framework_TestCase {
 
@@ -74,7 +74,7 @@ class CallbackReaderTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException kamermans\Command\TerminateException
+     * @expectedException Edrisa\Command\TerminateException
      */
     public function testTerminateFromCallback()
     {

@@ -1,10 +1,10 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
-use kamermans\Command\Exception;
+use Edrisa\Command\Exception;
 
 /**
  * Writes a stream into another stream
- * @package kamermans\Command\Stream
+ * @package Edrisa\Command\Stream
  */
 class StreamWriter implements Handler, Writer {
 

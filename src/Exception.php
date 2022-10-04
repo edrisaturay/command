@@ -1,7 +1,7 @@
-<?php namespace kamermans\Command;
+<?php namespace Edrisa\Command;
 
 /**
  * Base Exception
- * @package kamermans\Command
+ * @package Edrisa\Command
  */
 class Exception extends \Exception {}

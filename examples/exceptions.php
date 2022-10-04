@@ -1,7 +1,7 @@
 <?php
 
-use kamermans\Command\Command;
-use kamermans\Command\CommandException;
+use Edrisa\Command\Command;
+use Edrisa\Command\CommandException;
 
 require_once __DIR__.'/../vendor/autoload.php';
 

@@ -1,6 +1,6 @@
 <?php
 
-use kamermans\Command\Command;
+use Edrisa\Command\Command;
 
 require_once __DIR__.'/../vendor/autoload.php';
 

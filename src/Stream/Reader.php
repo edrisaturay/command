@@ -1,8 +1,8 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
 /**
  * Handles a stream and can read from it
- * @package kamermans\Command\Stream
+ * @package Edrisa\Command\Stream
  */
 interface Reader {
 

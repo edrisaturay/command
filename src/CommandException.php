@@ -1,8 +1,8 @@
-<?php namespace kamermans\Command;
+<?php namespace Edrisa\Command;
 
 /**
  * Class CommandException is thrown when a command fails
- * @package kamermans\Command
+ * @package Edrisa\Command
  */
 class CommandException extends Exception {
 

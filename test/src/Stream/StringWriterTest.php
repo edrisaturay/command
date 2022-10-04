@@ -1,4 +1,4 @@
-<?php namespace kamermans\Command\Stream;
+<?php namespace Edrisa\Command\Stream;
 
 class StringWriterTest extends \PHPUnit_Framework_TestCase {
 

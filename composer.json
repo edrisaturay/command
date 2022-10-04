@@ -1,8 +1,12 @@
 {
-    "name": "kamermans/command",
+    "name": "edrisa/command",
     "description": "External command runner / executor for PHP",
-    "license": "BSD",
+    "license": "MIT",
     "authors": [
+        {
+            "name": "Edrisa A Turay",
+            "email": "edrisaa.turay@gmail.com"
+        },
         {
             "name": "Steve Kamerman",
             "email": "stevekamerman@gmail.com"
@@ -12,12 +16,11 @@
         "php": ">=5.4"
     },
     "require-dev": {
-        "php": ">=5.5",
         "phpunit/phpunit": "4.*"
     },
     "autoload": {
         "psr-4": {
-            "kamermans\\Command\\" : ["src/","test/src/"]
+            "Edrisa\\Command\\" : ["src/","test/src/"]
         }
     }
 }
